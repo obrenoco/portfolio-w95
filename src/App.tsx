@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const currentTime = new Date().toLocaleTimeString('pt-BR', { hour: 'numeric', minute: 'numeric', hour12: true })
+
+console.log(currentTime);
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App h-screen">
+
+      <footer className='flex bg-[#C0C0C0] justify-between absolute bottom-0 w-full text-black p-1 items-center'>
+        <button className='h-fit border-2 border-r-black border-b-black px-4 py-1 font-bold'>Start</button>
+        <div className='bg-[#b8b7b7] p-1 px-2 rounded-sm border-2 border-l-[#7f7f7f] border-t-[#7f7f7f] '>{currentTime}</div>
+      </footer>
     </div>
   );
 }
