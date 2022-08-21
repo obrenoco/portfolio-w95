@@ -3,9 +3,10 @@ import './App.css';
 import { Footer } from './components/Footer';
 import IntroSound from "./assets/sound/intro-sound.mp3"
 import Draggable from 'react-draggable'
-import CloseIcon from "./assets/close-icon.png"
-import MaximizeIcon from "./assets/maximize-icon.png"
-import MinimizeIcon from "./assets/minimize-icon.png"
+import CloseIcon from "./assets/icons/close-icon.png"
+import MaximizeIcon from "./assets/icons/maximize-icon.png"
+import MinimizeIcon from "./assets/icons/minimize-icon.png"
+import MyComputerIcon from "./assets/icons/my-computer.png"
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,7 +16,11 @@ function App() {
       <main onClick={() => setIsMenuOpen(false)} className='flex flex-col h-[94.5vh] justify-center items-center'>
         <Draggable>
           <div className='w-full max-w-4xl z-10 py-0.5 bg-gray border-white border-2 text-black'>
-            <header className='bg-gray-dark flex justify-end px-2 py-1'>
+            <header className='bg-gray-dark flex justify-between px-2 py-1'>
+              <div className='flex items-center gap-1'>
+                <img src={MyComputerIcon} alt="" />
+                <h2 className='text-gray-300 font-bold'>My Portfolio</h2>
+              </div>
               <ul className='list-none flex items-center gap-1'>
                 <li className='flex'>
                   <button>

@@ -1,5 +1,5 @@
-import WindowsIcon from "../assets/windows-icon.png"
-import SoundIcon from "../assets/sound.png";
+import WindowsIcon from "../assets/icons/windows-icon.png"
+import SoundIcon from "../assets/icons/sound.png";
 
 const currentTime = new Date().toLocaleTimeString('pt-BR', { hour: 'numeric', minute: 'numeric', hour12: true })
 
