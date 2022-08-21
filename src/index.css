@@ -4,7 +4,8 @@
 
 
 html {
-  cursor: url("./assets/cursor-default.png"),grab;
+  cursor: url("./assets/cursor-default.png"), grab;
+  overflow: hidden;
 }
 
 body {
@@ -26,6 +27,6 @@ code {
 
 @media (any-hover: hover) {
   button:hover {
-    cursor: url("./assets/cursor-pointer.png"),pointer;
+    cursor: url("./assets/cursor-pointer.png"), pointer;
   }
 }
