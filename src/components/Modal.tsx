@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear()
 export const Modal = () => {
 	return (
 		<Draggable>
-			<div className='w-full max-w-4xl z-10 py-0.5 bg-gray border-white border-2 text-black'>
+			<div className='absolute w-full max-w-4xl z-10 py-0.5 bg-gray border-white border-2 text-black'>
 				<header className='bg-gray-dark flex justify-between px-2 py-1'>
 					<div className='flex items-center gap-1'>
 						<img src={MyComputerIcon} alt="" />
@@ -43,7 +43,7 @@ export const Modal = () => {
 						<li className='px-4 hover:bg-blue-500 hover:text-white transition-colors'>File</li>
 					</ul>
 				</div>
-				<section className='flex gap-10 bg-white overflow-auto max-h-[60vh] border-l-black border-t-black border-2 p-2'>
+				<section className='flex gap-10 bg-white overflow-auto max-h-[40vh] border-l-black border-t-black border-2 p-2'>
 					<div>
 						<div className='w-40 h-40 bg-red-800'></div>
 					</div>
