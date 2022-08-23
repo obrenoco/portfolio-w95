@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import OrcaIcon from "../../assets/icons/orca.png";
 
-const startYear = 2019;
-const currentYear = new Date().getFullYear();
+// const startYear = 2019;
+// const currentYear = new Date().getFullYear();
 
 export const ModalBody = () => {
   return (
