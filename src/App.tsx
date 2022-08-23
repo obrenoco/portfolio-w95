@@ -4,7 +4,7 @@ import Computer from "./assets/icons/computer.png";
 import Folder from "./assets/icons/folder.png";
 import Trash from "./assets/icons/trash.png";
 import { Footer } from "./components/Footer";
-import { Modal } from "./components/Modal";
+import { Modal } from "./components/Modal/Modal";
 
 type ItemsMenuType = {
   icon: React.ReactNode;
@@ -23,30 +23,30 @@ const itemsMenu: ItemsMenuType = [
     icon: Computer,
     description: "Computer",
   },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
-  {
-    icon: Trash,
-    description: "Trash",
-  },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
+  // {
+  //   icon: Trash,
+  //   description: "Trash",
+  // },
 ];
 
 function App() {
@@ -55,12 +55,12 @@ function App() {
     <div className="App h-screen">
       <main
         onClick={() => setIsMenuOpen(false)}
-        className="grid grid-rows-6 grid-cols-12 grid-flow-col gap-5 p-6 h-[94.5vh] relative"
+        className="grid grid-rows-7 grid-cols-12 grid-flow-col p-6 relative"
       >
         {itemsMenu.map((x) => (
           <button
             key={x.description}
-            className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-3 `}
+            className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-2 `}
           >
             <img src={x.icon as any} alt={x.description} />
             <p>{x.description}</p>
