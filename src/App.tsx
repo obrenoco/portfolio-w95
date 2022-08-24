@@ -5,6 +5,7 @@ import Folder from "./assets/icons/folder.png";
 import Trash from "./assets/icons/trash.png";
 import { Footer } from "./components/Footer";
 import { Modal } from "./components/Modal/Modal";
+import SplashScreen from "./assets/images/splash-screen.png";
 
 type ItemsMenuType = {
   icon: React.ReactNode;
@@ -51,8 +52,20 @@ const itemsMenu: ItemsMenuType = [
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  window.addEventListener("load", () => setLoading(false));
+
   return (
     <div className="App h-screen">
+      {loading && (
+        <img
+          src={SplashScreen}
+          alt=""
+          className="fixed z-20 transition-opacity"
+        />
+      )}
+
       <main
         onClick={() => setIsMenuOpen(false)}
         className="grid grid-rows-7 grid-cols-12 grid-flow-col p-6 relative"

@@ -41,16 +41,16 @@ export const Modal = () => {
         <div>
           <ul className="flex">
             <li className="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors">
-              File
+              <u>F</u>ile
             </li>
             <li className="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors">
-              Edit
+              <u>E</u>dit
             </li>
             <li className="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors">
-              Format
+              For<u>m</u>at
             </li>
             <li className="leading-none py-1 pt-2 px-4 hover:bg-blue-500 hover:text-white transition-colors">
-              Help
+              <u>H</u>elp
             </li>
           </ul>
         </div>
