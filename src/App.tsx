@@ -57,7 +57,7 @@ function App() {
   window.addEventListener("load", () => setLoading(false));
 
   return (
-    <div className="App h-screen">
+    <div className="App h-screen overflow-hidden">
       {loading && (
         <img
           src={SplashScreen}
