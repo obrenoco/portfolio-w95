@@ -9,7 +9,7 @@ export const ModalBody = () => {
     <Fragment>
       <section
         className={
-          "bg-gray overflow-auto h-96 border-l-black border-t-black border-2 p-2"
+          "bg-gray overflow-auto h-[90%] border-l-black border-t-black border-2 p-2"
         }
       >
         <div className={"h-96 gap-12 flex items-center justify-center"}>

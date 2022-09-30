@@ -1,5 +1,5 @@
-import WindowsIcon from "../assets/icons/windows-icon.png";
-import SoundIcon from "../assets/icons/sound.png";
+import WindowsIcon from "../../assets/icons/windows-icon.png";
+import SoundIcon from "../../assets/icons/sound.png";
 
 const currentTime = new Date().toLocaleTimeString("pt-BR", {
   hour: "numeric",
@@ -10,8 +10,15 @@ const currentTime = new Date().toLocaleTimeString("pt-BR", {
 type FooterType = {
   isMenuOpen: boolean;
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  showModal: boolean;
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
-export const Footer = ({ isMenuOpen, setIsMenuOpen }: FooterType) => {
+export const Footer = ({
+  isMenuOpen,
+  setIsMenuOpen,
+  showModal,
+  setShowModal,
+}: FooterType) => {
   return (
     <footer className="fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 ">
       <div
