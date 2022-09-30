@@ -1,4 +1,3 @@
-import Draggable from "react-draggable";
 import { Header } from "./header";
 
 import { ModalBody } from "./body";
