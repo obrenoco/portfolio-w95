@@ -6,7 +6,7 @@ const currentTime = new Date().toLocaleTimeString("pt-BR", {
 });
 export const Clock = () => {
   return (
-    <div className="flex gap-3 bg-gray p-1 px-2 rounded-sm border-2 border-l-gray-dark border-t-gray-dark ">
+    <div className="flex gap-2 bg-gray p-1.5 px-2 rounded-sm border-2 border-l-gray-dark border-t-gray-dark ">
       <img src={SoundIcon} alt="" />
       <span>{currentTime}</span>
     </div>

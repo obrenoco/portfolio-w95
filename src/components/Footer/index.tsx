@@ -23,19 +23,14 @@ export const Footer = ({
         }`}
       ></div>
       <div className="flex items-center justify-between w-full">
-        <div className="flex gap-2">
-          <Button
-            Icon={WindowsIcon}
-            alt="Windows button"
-            text="Start"
-            className={"font-bold"}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          />
+        <div className="flex gap-1">
+          <Button Icon={WindowsIcon} alt="Windows button" text="Start" />
           <Button
             Icon={MyComputerIcon}
             alt="Folder window"
             text="Folder"
-            className={"font-bold"}
+            isFocused={showModal}
+            className={"w-[130px]"}
             onClick={() => setShowModal(!showModal)}
           />
         </div>

@@ -5,7 +5,7 @@ import { Desktop } from "./components/Desktop";
 import { Footer } from "./components/Footer";
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="App h-screen overflow-hidden">

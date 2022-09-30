@@ -5,9 +5,9 @@ import { ModalBody } from "./body";
 
 export const Modal = ({ showModal }: { showModal: boolean }) => {
   return (
-    <Draggable>
+    <Draggable disabled>
       <div
-        className={`absolute w-[90%] max-w-4xl h-[75%] z-10 py-0.5 bg-gray border-white border-2 text-black left-[5%] top-[15vh] ${
+        className={`absolute w-[90%] max-w-4xl h-[75%] z-10 py-0.5 bg-gray border-white border-2 text-black left-[5%] top-[10vh] ${
           showModal ? "" : "opacity-0"
         }`}
       >

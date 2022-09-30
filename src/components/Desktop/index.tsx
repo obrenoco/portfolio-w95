@@ -4,7 +4,7 @@ import Trash from "../../assets/icons/trash.png";
 import { Modal } from "../Modal";
 
 type ItemsMenuType = {
-  icon: React.ReactNode;
+  icon: string;
   description: string;
 }[];
 
@@ -38,9 +38,9 @@ export const Desktop = ({ showModal, setShowMenu }: DesktopType) => {
       {itemsMenu.map((x) => (
         <button
           key={x.description}
-          className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-2 `}
+          className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-2 font-medium`}
         >
-          <img src={x.icon as any} alt={x.description} />
+          <img src={x.icon} alt={x.description} />
           <p>{x.description}</p>
         </button>
       ))}
