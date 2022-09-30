@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Modal } from "../Modal";
 import Computer from "../../assets/icons/computer.png";
 import Folder from "../../assets/icons/folder.png";
 import Trash from "../../assets/icons/trash.png";
+import { Modal } from "../Modal";
 
 type ItemsMenuType = {
   icon: React.ReactNode;

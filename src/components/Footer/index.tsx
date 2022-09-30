@@ -1,11 +1,7 @@
 import WindowsIcon from "../../assets/icons/windows-icon.png";
-import SoundIcon from "../../assets/icons/sound.png";
-
-const currentTime = new Date().toLocaleTimeString("pt-BR", {
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true,
-});
+import MyComputerIcon from "../../assets/icons/my-computer.png";
+import { Button } from "./button";
+import { Clock } from "./clock";
 
 type FooterType = {
   isMenuOpen: boolean;
@@ -27,17 +23,23 @@ export const Footer = ({
         }`}
       ></div>
       <div className="flex items-center justify-between w-full">
-        <button
-          className="flex items-center gap-2 h-fit border-2 border-r-black border-b-black px-2 py-1 font-bold"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <img src={WindowsIcon} alt="Windows button" />
-          <span className="text-xl">Start</span>
-        </button>
-        <div className="flex gap-3 bg-gray p-1 px-2 rounded-sm border-2 border-l-gray-dark border-t-gray-dark ">
-          <img src={SoundIcon} alt="" />
-          <span>{currentTime}</span>
+        <div className="flex gap-2">
+          <Button
+            Icon={WindowsIcon}
+            alt="Windows button"
+            text="Start"
+            className={"font-bold"}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
+          <Button
+            Icon={MyComputerIcon}
+            alt="Folder window"
+            text="Folder"
+            className={"font-bold"}
+            onClick={() => setShowModal(!showModal)}
+          />
         </div>
+        <Clock />
       </div>
     </footer>
   );
