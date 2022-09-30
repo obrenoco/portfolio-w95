@@ -23,7 +23,7 @@ export const ModalBody = () => {
           <img src={OrcaIcon} alt="" className={`${orcaSize} -scale-x-[1]`} />
           <h1 className="flex flex-col items-center text-4xl font-bold tracking-wider ">
             <span>Breno</span>
-            <span>Romeiro</span>
+            <span>Romeiroo</span>
           </h1>
           <img src={OrcaIcon} alt="" className={orcaSize} />
         </div>
