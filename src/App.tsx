@@ -25,7 +25,7 @@ function App() {
         src={SplashMobile}
         alt="Windows splash screen"
         className={`fixed z-30 ${
-          loading ? "" : "opacity-0"
+          loading ? "" : "opacity-0 hidden"
         } transition-opacity duration-500`}
       />
       {showDesktop && (
