@@ -32,7 +32,7 @@ export const Desktop = ({ showModal, setShowMenu }: DesktopType) => {
   return (
     <main
       onClick={() => setShowMenu(false)}
-      className="grid grid-rows-7 grid-cols-12 grid-flow-col p-6 relative"
+      className="flex flex-col absolute items-start p-6 w-fit"
     >
       <Modal showModal={showModal} />
       {itemsMenu.map((x) => (

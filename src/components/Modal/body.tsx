@@ -10,7 +10,7 @@ export const ModalBody = () => {
     <Fragment>
       <section
         className={
-          "flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto h-[90%] border-l-black border-t-black border-2 p-2"
+          "flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-[90%] border-l-black border-t-black border-2 p-2"
         }
       >
         <img
