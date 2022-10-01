@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import OrcaIcon from "../../assets/icons/orca.png";
 import ProfilePicture from "../../assets/images/profile.png";
+
+import "./style.css";
+
 const startYear = 2019;
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +13,7 @@ export const ModalBody = () => {
     <Fragment>
       <section
         className={
-          "flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-[90%] border-l-black border-t-black border-2 p-2"
+          "flex flex-col gap-10 text-xl items-center bg-emerald-100 overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 p-2"
         }
       >
         <img
@@ -23,11 +26,11 @@ export const ModalBody = () => {
           <img src={OrcaIcon} alt="" className={`${orcaSize} -scale-x-[1]`} />
           <h1 className="flex flex-col items-center text-4xl font-bold tracking-wider ">
             <span>Breno</span>
-            <span>Romeiroo</span>
+            <span>Romeiro</span>
           </h1>
           <img src={OrcaIcon} alt="" className={orcaSize} />
         </div>
-        <div className="flex flex-col gap-4 px-4">
+        <div className="flex flex-col gap-4 px-4 w-full">
           <p className="first-letter:text-6xl first-letter:font-">
             Hi, I'm Breno! 👋
             <br />

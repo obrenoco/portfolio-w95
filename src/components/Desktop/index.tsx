@@ -32,18 +32,22 @@ export const Desktop = ({ showModal, setShowMenu }: DesktopType) => {
   return (
     <main
       onClick={() => setShowMenu(false)}
-      className="flex flex-col relative items-start p-6 w-fit"
+      className="flex relative items-start"
     >
-      <Modal showModal={showModal} />
-      {itemsMenu.map((x) => (
-        <button
-          key={x.description}
-          className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-2 font-medium`}
-        >
-          <img src={x.icon} alt={x.description} />
-          <p>{x.description}</p>
-        </button>
-      ))}
+      {showModal ? (
+        <Modal showModal={showModal} />
+      ) : (
+        itemsMenu.map((x) => (
+          <button
+            key={x.description}
+            className={`flex flex-col items-center w-fit gap-2 self-center focus:bg-blue-400 p-6 font-medium`}
+          >
+            <img src={x.icon} alt={x.description} />
+            <p>{x.description}</p>
+          </button>
+        ))
+      )}
+      {}
     </main>
   );
 };

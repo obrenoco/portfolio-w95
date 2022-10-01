@@ -5,7 +5,7 @@ import SplashMobile from "./assets/images/splash-mobile.png";
 import { Footer } from "./components/Footer";
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showDesktop, setShowDesktop] = useState(false);
@@ -13,10 +13,10 @@ function App() {
   window.addEventListener("load", () => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
     setTimeout(() => {
       setShowDesktop(true);
-    }, 4000);
+    }, 3000);
   });
 
   return (

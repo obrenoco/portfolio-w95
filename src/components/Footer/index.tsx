@@ -16,7 +16,7 @@ export const Footer = ({
   setShowModal,
 }: FooterType) => {
   return (
-    <footer className="fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 ">
+    <footer className="fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 h-[54px]">
       <div
         className={`fixed bottom-12 left-0 bg-gray border-b-black border-r-black border-2 w-[400px] h-[600px] z-50 ${
           isMenuOpen ? "" : "hidden"
